@@ -11,7 +11,7 @@ const AvailableMeals = () => {
 	useEffect(() => {
 		const getMeals = async () => {
 			const response = await fetch(
-				"https://max-react-http-d63c5-default-rtdb.asia-southeast1.firebasedatabase.app/meals.cjson"
+				"https://max-react-http-d63c5-default-rtdb.asia-southeast1.firebasedatabase.app/meals.json"
 			);
 			if (!response.ok) {
 				throw new Error("getting data failed");
